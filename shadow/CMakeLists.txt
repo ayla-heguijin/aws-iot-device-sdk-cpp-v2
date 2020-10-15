@@ -109,10 +109,10 @@ install(EXPORT "IotShadow-cpp-targets"
         NAMESPACE AWS::
         COMPONENT Development)
 
-configure_file("cmake/IotShadow-cpp-config.cmake"
-        "${CMAKE_CURRENT_BINARY_DIR}/IotShadow-cpp-config.cmake"
+configure_file("cmake/IotShadow-cppConfig.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/IotShadow-cppConfig.cmake"
         @ONLY)
 
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/IotShadow-cpp-config.cmake"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/IotShadow-cppConfig.cmake"
         DESTINATION "lib/IotShadow-cpp/cmake/"
         COMPONENT Development)
